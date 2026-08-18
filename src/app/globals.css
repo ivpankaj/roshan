@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --navy-primary: #06233D;
+    --navy-dark: #03182B;
+    --navy-light: #0D3559;
+    --gold-primary: #D99A16;
+    --gold-bright: #F0B323;
+    --gold-light: #FFF9EB;
+    --bg-light: #F7F8FA;
+    --text-dark: #17202A;
+    --text-muted: #667085;
+    --border-light: #E2E8F0;
+  }
+}
+
+@theme {
+  --color-navy-primary: #06233D;
+  --color-navy-dark: #03182B;
+  --color-navy-light: #0D3559;
+  --color-gold-primary: #D99A16;
+  --color-gold-bright: #F0B323;
+  --color-gold-light: #FFF9EB;
+  --color-bg-light: #F7F8FA;
+  --color-text-dark: #17202A;
+  --color-text-muted: #667085;
+  --color-border-light: #E2E8F0;
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #03182B;
+}
+::-webkit-scrollbar-thumb {
+  background: #D99A16;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F0B323;
+}
+
+/* Custom Gold Gradient & Glow utility classes */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F0B323 0%, #D99A16 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  border: 1px solid rgba(217, 154, 22, 0.3);
+  box-shadow: 0 4px 20px -2px rgba(217, 154, 22, 0.15);
+}
+
+.navy-hero-bg {
+  background: radial-gradient(circle at 70% 30%, #0D3559 0%, #06233D 50%, #03182B 100%);
+}
+
+.pattern-grid-subtle {
+  background-image: radial-gradient(rgba(240, 179, 35, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
