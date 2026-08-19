@@ -11,8 +11,49 @@ interface FooterProps {
 export const Footer: React.FC<FooterProps> = ({ onOpenQuoteModal }) => {
   return (
     <footer className="bg-navy-dark text-white pt-16 pb-8 border-t-4 border-gold-primary relative overflow-hidden">
-      {/* Background Architectural Grid Pattern */}
-      <div className="absolute inset-0 pattern-grid-subtle opacity-30 pointer-events-none"></div>
+      {/* Golden Wavy Curved Lines Background */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        <svg
+          className="absolute inset-0 w-full h-full object-cover opacity-65"
+          preserveAspectRatio="none"
+          viewBox="0 0 1440 400"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="ft-gold-wave-1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#D99A16" stopOpacity="0.8" />
+              <stop offset="50%" stopColor="#F0B323" stopOpacity="1" />
+              <stop offset="100%" stopColor="#D99A16" stopOpacity="0.8" />
+            </linearGradient>
+            <linearGradient id="ft-gold-wave-2" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#F0B323" stopOpacity="0.3" />
+              <stop offset="50%" stopColor="#D99A16" stopOpacity="0.6" />
+              <stop offset="100%" stopColor="#F0B323" stopOpacity="0.3" />
+            </linearGradient>
+          </defs>
+
+          {/* Primary Golden Wave Curve */}
+          <path
+            d="M0,80 C360,240 720,20 1080,200 C1260,280 1440,120 1440,120"
+            stroke="url(#ft-gold-wave-1)"
+            strokeWidth="3.5"
+            fill="none"
+          />
+
+          {/* Secondary Intersecting Wave Curve */}
+          <path
+            d="M0,240 C400,60 800,320 1200,90 C1320,30 1440,180 1440,180"
+            stroke="url(#ft-gold-wave-2)"
+            strokeWidth="2.5"
+            strokeDasharray="12 6"
+            fill="none"
+          />
+        </svg>
+
+        {/* Ambient Golden Glow Orb */}
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gold-primary/15 blur-3xl rounded-full"></div>
+      </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
         
