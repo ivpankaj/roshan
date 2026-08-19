@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { CLIENTS_LIST } from '@/lib/clientData';
-import { CheckCircle2, ArrowRight, PlayCircle } from 'lucide-react';
+import { CheckCircle2, ArrowRight } from 'lucide-react';
 
 export const ClientShowcase: React.FC = () => {
   return (
@@ -31,22 +31,20 @@ export const ClientShowcase: React.FC = () => {
               href={`/clients/${client.slug}`}
               className="group bg-slate-50 border-2 border-slate-200 hover:border-gold-primary p-6 transition-all duration-300 shadow-md hover:shadow-2xl flex flex-col justify-between rounded-none relative overflow-hidden"
             >
-              {/* Top Sector & Location Badge */}
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-[10px] font-black uppercase tracking-wider bg-navy-primary text-gold-bright px-2.5 py-0.5 border border-gold-primary/30">
-                  {client.category}
-                </span>
-                <span className="text-[10px] font-extrabold text-slate-400 uppercase tracking-wide flex items-center gap-1">
-                  <PlayCircle className="w-3.5 h-3.5 text-red-600" /> Video & Reviews
-                </span>
-              </div>
-
-              {/* Real SVG Logo Render */}
-              <div className="py-4 my-2 border-y border-slate-200/80 flex items-center justify-center">
-                <div
-                  className="w-full h-16 flex items-center justify-center transition-transform group-hover:scale-105"
-                  dangerouslySetInnerHTML={{ __html: client.logoSvg }}
-                />
+              {/* Real Logo Image / SVG Render */}
+              <div className="pb-4 mb-2 border-b border-slate-200/80 flex items-center justify-center min-h-[72px]">
+                {client.logoImg ? (
+                  <img
+                    src={client.logoImg}
+                    alt={client.name}
+                    className="h-16 w-auto object-contain max-w-[180px] transition-transform group-hover:scale-105"
+                  />
+                ) : (
+                  <div
+                    className="w-full h-16 flex items-center justify-center transition-transform group-hover:scale-105"
+                    dangerouslySetInnerHTML={{ __html: client.logoSvg }}
+                  />
+                )}
               </div>
 
               {/* Scope Teaser & Action */}

@@ -26,7 +26,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal }) => {
           {/* Left Column: Headlines & CTAs */}
           <div className="lg:col-span-7 space-y-6">
             
-    
+            {/* 100+ Houses Highlight Badge */}
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-navy-primary border border-gold-primary/40 text-gold-bright text-xs font-black uppercase tracking-widest rounded-none shadow-md">
+              <Sparkles className="w-4 h-4 text-gold-primary" />
+              <span>Over 100+ Houses & Villas Decorated</span>
+            </div>
 
             {/* Main Headline */}
             <div className="space-y-2">

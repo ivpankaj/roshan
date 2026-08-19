@@ -141,7 +141,7 @@ export const QuickQuoteModal: React.FC<QuickQuoteModalProps> = ({
                   </label>
                   <input
                     type="text"
-                    placeholder="e.g. Techno Solution Ltd."
+                    placeholder="e.g. Sperry Techno Solutions"
                     value={formData.company}
                     onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                     className="w-full px-4 py-2.5 rounded-none border border-slate-300 focus:border-gold-primary focus:ring-1 focus:ring-gold-primary outline-none text-sm text-navy-primary"

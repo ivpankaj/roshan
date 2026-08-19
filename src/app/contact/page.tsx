@@ -197,7 +197,7 @@ export default function ContactPage() {
                         </label>
                         <input
                           type="text"
-                          placeholder="e.g. Techno Solution Plast Ltd."
+                          placeholder="e.g. Sperry Techno Solutions"
                           value={formData.company}
                           onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                           className="w-full px-4 py-3 border border-slate-300 focus:border-gold-primary focus:ring-1 focus:ring-gold-primary outline-none text-sm text-navy-primary bg-white rounded-none"

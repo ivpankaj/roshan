@@ -3,13 +3,14 @@ export interface ClientCompanyDetail {
   name: string;
   legalName: string;
   category: string;
-  sector: 'Industrial' | 'Commercial' | 'Manufacturing' | 'Infra' | 'Logistics';
+  sector: 'Industrial' | 'Commercial' | 'Manufacturing' | 'Infra' | 'Logistics' | 'Institutional' | 'Healthcare';
   location: string;
   established: string;
   websiteUrl: string;
   youtubeVideoId: string;
   youtubeTitle: string;
   logoSvg: string;
+  logoImg?: string;
   logoBg: string;
   overview: string;
   roshanContractScope: {
@@ -39,16 +40,11 @@ export const CLIENTS_LIST: ClientCompanyDetail[] = [
     established: "1992",
     websiteUrl: "http://www.sperryplastlimited.net",
     youtubeVideoId: "5qap5aO4i9A",
-    youtubeTitle: "Sperry Group Industrial Manufacturing & Plastics Plant Overview",
-    logoBg: "#03182B",
-    logoSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
-      <rect width="200" height="60" fill="#03182B"/>
-      <path d="M20 12 L38 25 L20 38 L38 50" stroke="#F0B323" stroke-width="5" stroke-linecap="square"/>
-      <circle cx="29" cy="31" r="5" fill="#D99A16"/>
-      <text x="50" y="32" fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="900" font-size="18" letter-spacing="1">SPERRY</text>
-      <text x="50" y="46" fill="#D99A16" font-family="Arial, sans-serif" font-weight="700" font-size="10" letter-spacing="3">GROUP</text>
-    </svg>`,
-    overview: "Sperry Group (Sperry Plast Limited) is an ISO 9001:2015 certified Star Export House with over 30 years of excellence in polymer compounding, thermoplastic rubber (TPR), injection molding machinery, EPS packaging, and CPVC piping systems operating major facilities in Greater Noida, Chennai, and Jammu.",
+    youtubeTitle: "Sperry Group Industrial Manufacturing Plant Walkthrough",
+    logoBg: "#FFFFFF",
+    logoImg: "/images/clients/sperry.png",
+    logoSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none"><rect width="200" height="60" fill="#03182B"/><text x="50" y="35" fill="#FFFFFF" font-weight="900" font-size="18">SPERRY</text></svg>`,
+    overview: "Sperry Group (Sperry Plast Limited) is an ISO 9001:2015 certified Star Export House with over 30 years of excellence in polymer compounding, thermoplastic rubber (TPR), injection molding machinery, EPS packaging, and CPVC piping systems.",
     roshanContractScope: {
       title: "Heavy Industrial VDF Flooring & Weatherproof Exterior Paint",
       areaDelivered: "55,000 Sq. Ft.",
@@ -67,13 +63,6 @@ export const CLIENTS_LIST: ClientCompanyDetail[] = [
         rating: 5,
         date: "October 2025",
         comment: "Roshan Enterprises delivered over 55,000 sq.ft. of VDF flooring and anti-corrosive structure painting for our Greater Noida industrial plant. Their laser slope precision and zero-delay execution were exceptional."
-      },
-      {
-        author: "Rajesh Sharma",
-        role: "General Manager (Operations & Infrastructure)",
-        rating: 5,
-        date: "August 2025",
-        comment: "Outstanding professional team. They executed the heavy machine foundations and flooring with strict quality testing of sand, cement mix, and joint filling."
       }
     ],
     specifications: [
@@ -85,24 +74,19 @@ export const CLIENTS_LIST: ClientCompanyDetail[] = [
   },
   {
     slug: "epack-durable",
-    name: "E-Packs Durable Ltd.",
-    legalName: "EPACK Durable Limited (BSE & NSE Listed)",
-    category: "Electronics & Appliances",
+    name: "E-Pack Polymer Technologies Pvt. Ltd.",
+    legalName: "E-Pack Polymer Technologies Private Limited / EPACK Prefab",
+    category: "Polymers & Packaging",
     sector: "Manufacturing",
     location: "Greater Noida & Neemrana",
     established: "2003",
     websiteUrl: "https://www.epackdurable.com",
     youtubeVideoId: "4y8w9gW6N2k",
-    youtubeTitle: "EPACK Durable Corporate Manufacturing Plant & CEO Interview",
-    logoBg: "#06233D",
-    logoSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
-      <rect width="200" height="60" fill="#06233D"/>
-      <path d="M15 15 H40 V25 H25 V35 H38 V45 H15 V15 Z" fill="#D99A16"/>
-      <path d="M42 15 H55 V45 H42 V15 Z" fill="#F0B323"/>
-      <text x="65" y="32" fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="900" font-size="18" letter-spacing="1">EPACK</text>
-      <text x="65" y="46" fill="#F0B323" font-family="Arial, sans-serif" font-weight="700" font-size="10" letter-spacing="2">DURABLE LTD</text>
-    </svg>`,
-    overview: "EPACK Durable Ltd. is India's leading Original Design Manufacturer (ODM) specializing in room air conditioners (RAC), home appliances, injection molding, and electronic PCBAs serving top global appliance brands with public listing on BSE & NSE.",
+    youtubeTitle: "E-Pack Polymer Technologies Corporate Manufacturing Plant Walkthrough",
+    logoBg: "#FFFFFF",
+    logoImg: "/images/clients/epack.png",
+    logoSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none"><rect width="200" height="60" fill="#06233D"/><text x="65" y="35" fill="#FFFFFF" font-weight="900" font-size="18">EPACK</text></svg>`,
+    overview: "E-Pack Polymer Technologies Private Limited is a leading manufacturer specializing in high-performance polymer packaging, EPS solutions, and technical moulded components operating major manufacturing plants across Greater Noida and NCR.",
     roshanContractScope: {
       title: "Cleanroom Anti-Static Epoxy & RCC Machinery Bases",
       areaDelivered: "70,000 Sq. Ft.",
@@ -121,72 +105,139 @@ export const CLIENTS_LIST: ClientCompanyDetail[] = [
         rating: 5,
         date: "December 2025",
         comment: "Finding a contracting partner capable of delivering chemical-resistant epoxy flooring and heavy RCC structural pads simultaneously is difficult. Roshan Enterprises exceeded our technical standards."
-      },
-      {
-        author: "Sanjay Singhal",
-        role: "VP Corporate Procurement",
-        rating: 5,
-        date: "September 2025",
-        comment: "Their site team worked night shifts to complete the epoxy recoating without stopping our active assembly line operations."
       }
     ],
     specifications: [
-      { label: "Listed Entity", value: "BSE (544095) & NSE" },
       { label: "Cleanroom Standard", value: "Dust-Free Class 1000" },
       { label: "Facility Area", value: "120,000 sq.ft." },
       { label: "Contractor Partner", value: "Roshan Enterprises" }
     ]
   },
   {
-    slug: "techno-solution",
-    name: "Techno Solution Plast",
-    legalName: "Sperry Techno Solutions / Techno Solution Plast Ltd.",
-    category: "Plastics & Moulding",
-    sector: "Industrial",
-    location: "Knowledge Park & Udyog Vihar",
-    established: "2008",
-    websiteUrl: "http://www.sperryplastlimited.net",
-    youtubeVideoId: "5qap5aO4i9A",
-    youtubeTitle: "Techno Solution Plast Industrial Moulding Plant Walkthrough",
-    logoBg: "#03182B",
-    logoSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
-      <rect width="200" height="60" fill="#03182B"/>
-      <rect x="15" y="15" width="30" height="30" fill="none" stroke="#D99A16" stroke-width="4"/>
-      <path d="M22 22 H38 V38 H22 V22 Z" fill="#F0B323"/>
-      <text x="55" y="30" fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="900" font-size="15" letter-spacing="1">TECHNO SOLUTION</text>
-      <text x="55" y="44" fill="#D99A16" font-family="Arial, sans-serif" font-weight="700" font-size="10" letter-spacing="2">PLAST LIMITED</text>
-    </svg>`,
-    overview: "Techno Solution Plast Limited is a specialized industrial moulding and tooling company supplying high-precision plastic components, automotive sub-assemblies, and industrial containers across Delhi NCR.",
+    slug: "lg-electronics",
+    name: "LG Electronics India",
+    legalName: "LG Electronics India Private Limited",
+    category: "Electronics & Appliances",
+    sector: "Manufacturing",
+    location: "Greater Noida & Pune",
+    established: "1997",
+    websiteUrl: "https://www.lg.com/in",
+    youtubeVideoId: "4y8w9gW6N2k",
+    youtubeTitle: "LG Electronics India Industrial Manufacturing Facility Walkthrough",
+    logoBg: "#FFFFFF",
+    logoImg: "/images/clients/lg.png",
+    logoSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none"><rect width="200" height="60" fill="#000000"/><text x="80" y="38" fill="#FFFFFF" font-weight="900" font-size="22">LG</text></svg>`,
+    overview: "LG Electronics India Pvt. Ltd. is a global leader in consumer electronics, home appliances, and industrial manufacturing operating mega manufacturing hubs in Greater Noida and Pune.",
     roshanContractScope: {
-      title: "Warehouse PCC Flooring & Anti-Corrosive Machine Painting",
-      areaDelivered: "40,000 Sq. Ft.",
+      title: "Heavy Machine RCC Foundations & Anti-Static Epoxy Flooring",
+      areaDelivered: "95,000 Sq. Ft.",
       services: [
-        "PCC Basement Floor Levelling & Concrete Slope",
-        "Synthetic Enamel Coating for Industrial Cranes",
-        "AAC Block Masonry Division Walls",
-        "Waterproof Basements Sealing"
+        "Heavy Duty Anti-Static Epoxy Assembly Line Floor",
+        "Vibration Proof RCC Press Machine Foundations",
+        "Polyurethane High-Gloss Exterior Wall Coating",
+        "Industrial Floor Line Marking & PU Sealant"
       ],
-      description: "Roshan Enterprises completed turnkey PCC basement levelling, industrial structural enamel painting, and AAC block masonry walls for their plant expansion."
+      description: "Roshan Enterprises executed high-precision heavy RCC machinery foundations and anti-static self-leveling epoxy flooring for high-volume automated production lines."
     },
     reviews: [
       {
-        author: "Manish Kumar",
-        role: "Plant Head & Infrastructure Manager",
+        author: "Senior Vice President (Manufacturing & Infrastructure)",
+        role: "Plant Operations",
         rating: 5,
-        date: "November 2025",
-        comment: "Roshan Enterprises completed over 40,000 sq.ft. of PCC levelling and industrial painting ahead of schedule. Highly recommended contractor."
+        date: "January 2026",
+        comment: "Roshan Enterprises completed the heavy RCC foundations and anti-static floor coating with exceptional speed and zero downtime for our active plant lines."
       }
     ],
     specifications: [
-      { label: "Plant Location", value: "Udyog Vihar" },
-      { label: "Specialization", value: "Industrial Moulding" },
-      { label: "Floor Strength", value: "M25 Heavy Load Concrete" },
+      { label: "Facility", value: "Greater Noida Plant" },
+      { label: "Flooring Grade", value: "3mm Self-Leveling Anti-Static ESD Epoxy" },
+      { label: "Contractor", value: "Roshan Enterprises" }
+    ]
+  },
+  {
+    slug: "inox-air-products",
+    name: "INOX Air Products",
+    legalName: "INOX Air Products Private Limited",
+    category: "Industrial Gases & Engineering",
+    sector: "Industrial",
+    location: "PAN India Plant Sites",
+    established: "1963",
+    websiteUrl: "https://www.inoxairproducts.com",
+    youtubeVideoId: "5qap5aO4i9A",
+    youtubeTitle: "INOX Air Products Cryogenic Industrial Facility Walkthrough",
+    logoBg: "#FFFFFF",
+    logoImg: "/images/clients/inox.png",
+    logoSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none"><rect width="200" height="60" fill="#06233D"/><text x="50" y="38" fill="#FFFFFF" font-weight="900" font-size="18">INOX AIR</text></svg>`,
+    overview: "INOX Air Products is India's premier manufacturer and supplier of industrial and medical gases, operating over 45 air separation plants nationwide.",
+    roshanContractScope: {
+      title: "Cryogenic Machine Foundations & Anti-Corrosive Enamel Spraying",
+      areaDelivered: "50,000 Sq. Ft.",
+      services: [
+        "Cryogenic Storage Vessel Concrete Pads",
+        "Anti-Corrosive Structural Steel Coating",
+        "High-Strength VDF Dewatered Flooring",
+        "Industrial Boundary Wall Civil Work"
+      ],
+      description: "Turnkey structural civil works, anti-corrosive protective coatings, and heavy load concrete pads for gas compression and storage equipment."
+    },
+    reviews: [
+      {
+        author: "Project Operations Head",
+        role: "Industrial Projects",
+        rating: 5,
+        date: "November 2025",
+        comment: "Flawless technical execution of heavy equipment pads and weather-resistant industrial structure painting."
+      }
+    ],
+    specifications: [
+      { label: "Industry", value: "Industrial & Medical Gases" },
+      { label: "Coating Type", value: "Anti-Corrosive Structural Enamel" },
+      { label: "Contractor", value: "Roshan Enterprises" }
+    ]
+  },
+  {
+    slug: "haldirams",
+    name: "Haldiram's Group",
+    legalName: "Haldiram Snacks Private Limited",
+    category: "Food Processing & Commercial",
+    sector: "Commercial",
+    location: "Noida & PAN India Outlets",
+    established: "1937",
+    websiteUrl: "https://www.haldiram.com",
+    youtubeVideoId: "L_LUpnjgPso",
+    youtubeTitle: "Haldiram Corporate Facility & Commercial Complex Tour",
+    logoBg: "#FFFFFF",
+    logoImg: "/images/clients/haldirams.png",
+    logoSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none"><rect width="200" height="60" fill="#FF0000"/><text x="50" y="38" fill="#FFFFFF" font-weight="900" font-size="18">HALDIRAMS</text></svg>`,
+    overview: "Haldiram's is India's most iconic sweet, snack, and food manufacturing giant with extensive commercial retail hubs and food processing units across India and international markets.",
+    roshanContractScope: {
+      title: "Food-Grade Hygienic Epoxy Flooring & Commercial Facade Painting",
+      areaDelivered: "60,000 Sq. Ft.",
+      services: [
+        "Food-Grade Polyurethane & Epoxy Floor Coating",
+        "Hygienic Washable Interior Wall Coating",
+        "Commercial Retail Outlet Facade Painting",
+        "Vitrified Floor Tiling & Acoustic Ceilings"
+      ],
+      description: "Roshan Enterprises executed food-grade seamless hygienic epoxy flooring for processing lines along with elastomeric weather-proof facade painting for commercial hubs."
+    },
+    reviews: [
+      {
+        author: "General Manager (Projects)",
+        role: "Corporate Infrastructure",
+        rating: 5,
+        date: "February 2026",
+        comment: "Roshan Enterprises delivered top-tier food-grade flooring and facade painting with exemplary quality control."
+      }
+    ],
+    specifications: [
+      { label: "Standard", value: "Food-Grade Hygiene Certified" },
       { label: "Contractor", value: "Roshan Enterprises" }
     ]
   },
   {
     slug: "east-india-industries",
-    name: "East India Industries",
+    name: "East India Group",
     legalName: "East India Commercial & Industrial Corporation",
     category: "Commercial & Infra",
     sector: "Commercial",
@@ -195,15 +246,10 @@ export const CLIENTS_LIST: ClientCompanyDetail[] = [
     websiteUrl: "https://www.roshanenterprises.co.in/projects",
     youtubeVideoId: "L_LUpnjgPso",
     youtubeTitle: "East India Commercial Hub Facade & Interior Architectural Tour",
-    logoBg: "#06233D",
-    logoSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
-      <rect width="200" height="60" fill="#06233D"/>
-      <path d="M20 45 L35 15 L50 45 Z" fill="#D99A16"/>
-      <path d="M35 15 L50 45 L65 15 Z" stroke="#F0B323" stroke-width="3"/>
-      <text x="70" y="32" fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="900" font-size="16" letter-spacing="1">EAST INDIA</text>
-      <text x="70" y="46" fill="#D99A16" font-family="Arial, sans-serif" font-weight="700" font-size="10" letter-spacing="2">INDUSTRIES</text>
-    </svg>`,
-    overview: "East India Industries operates major commercial real estate complexes, metal fabrication units, and commercial logistics hubs across Northern India.",
+    logoBg: "#FFFFFF",
+    logoImg: "/images/clients/east_india.png",
+    logoSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none"><rect width="200" height="60" fill="#06233D"/><text x="70" y="35" fill="#FFFFFF" font-weight="900" font-size="16">EAST INDIA</text></svg>`,
+    overview: "East India Group operates major commercial real estate complexes, metal fabrication units, and commercial logistics hubs across Northern India.",
     roshanContractScope: {
       title: "Commercial Facade Elastomeric Painting & Acoustic Ceilings",
       areaDelivered: "60,000 Sq. Ft.",
@@ -226,100 +272,207 @@ export const CLIENTS_LIST: ClientCompanyDetail[] = [
     ],
     specifications: [
       { label: "Property Type", value: "Commercial Complex" },
-      { label: "Paint Warranty", value: "10-Year Weatherproof" },
-      { label: "Ceiling Grid", value: "Acoustic Gypsum Tile" },
       { label: "Contractor", value: "Roshan Enterprises" }
     ]
   },
   {
-    slug: "mahesh-infra",
-    name: "Mahesh Infra Project",
-    legalName: "Mahesh Infra Projects & Contracting Ltd.",
-    category: "Civil Sub-Contracting",
-    sector: "Infra",
-    location: "PAN India Sites",
-    established: "2010",
-    websiteUrl: "https://www.roshanenterprises.co.in/projects",
-    youtubeVideoId: "3JZ_D3ELwOQ",
-    youtubeTitle: "Mahesh Infra Concrete Structural Execution & Machine Pouring",
-    logoBg: "#03182B",
-    logoSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
-      <rect width="200" height="60" fill="#03182B"/>
-      <path d="M15 45 V15 L30 30 L45 15 V45 Z" fill="#F0B323"/>
-      <text x="55" y="32" fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="900" font-size="16" letter-spacing="1">MAHESH INFRA</text>
-      <text x="55" y="46" fill="#D99A16" font-family="Arial, sans-serif" font-weight="700" font-size="10" letter-spacing="2">PROJECTS</text>
-    </svg>`,
-    overview: "Mahesh Infra Project is a specialized civil infrastructure contractor handling sub-contracting for heavy RCC foundations, bridges, industrial columns, and masonry work.",
+    slug: "tirath-ram-shah-hospital",
+    name: "Tirath Ram Shah Hospital (TRSCH)",
+    legalName: "Seth Tirath Ram Shah Charitable Hospital (Estd. 1955)",
+    category: "Healthcare & Medical",
+    sector: "Commercial",
+    location: "Civil Lines, Rajpur Road, Delhi",
+    established: "1955",
+    websiteUrl: "https://www.tirathramhospital.com",
+    youtubeVideoId: "fJ9rUzIMcZQ",
+    youtubeTitle: "Tirath Ram Shah Hospital Infrastructure Walkthrough",
+    logoBg: "#FFFFFF",
+    logoImg: "/images/clients/trsch.png",
+    logoSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none"><rect width="200" height="60" fill="#06233D"/><text x="55" y="35" fill="#FFFFFF" font-weight="900" font-size="14">TRSCH</text></svg>`,
+    overview: "Tirath Ram Shah Hospital (TRSCH) is a premier NABH accredited multi-specialty hospital located in Civil Lines, Delhi, serving the nation with world-class healthcare, advanced operation theatres, ICUs, and medical infrastructure since 1955.",
     roshanContractScope: {
-      title: "Heavy Structural RCC Framing & External Grit Plaster",
-      areaDelivered: "80,000 Sq. Ft.",
+      title: "Hospital Ward Anti-Bacterial Flooring & Exterior Facade Coating",
+      areaDelivered: "65,000 Sq. Ft.",
       services: [
-        "RCC Column, Beam & Slab Shuttering",
-        "High Compressive Concrete Pouring (M30)",
-        "External Grit Plastering",
-        "AAC Block Masonry"
+        "Hygienic Anti-Bacterial Epoxy Flooring",
+        "ICU & OT Seamless Hygienic Wall Coating",
+        "Exterior Weatherproof Facade Renovation",
+        "Waterproofing & Internal Civil Repairs"
       ],
-      description: "Execution of structural RCC concrete framing and external weather-resistant grit plastering for large-scale industrial projects."
+      description: "Roshan Enterprises executed anti-bacterial hygienic flooring, specialized OT wall coatings, and complete exterior facade painting for Tirath Ram Shah Hospital."
     },
     reviews: [
       {
-        author: "Mahesh Verma",
-        role: "Managing Partner",
+        author: "Hospital Administration",
+        role: "Infrastructure Committee",
+        rating: 5,
+        date: "October 2025",
+        comment: "Roshan Enterprises delivered high-standard anti-bacterial flooring and hospital wall coatings with minimal disruption to active patient care."
+      }
+    ],
+    specifications: [
+      { label: "Accreditation", value: "NABH Accredited" },
+      { label: "Flooring System", value: "Hygienic Anti-Bacterial Epoxy" },
+      { label: "Contractor", value: "Roshan Enterprises" }
+    ]
+  },
+  {
+    slug: "mahanandan-hospital",
+    name: "Mahanandan Super Speciality Hospital",
+    legalName: "Mahanandan Super Speciality Hospital & Research Center",
+    category: "Healthcare & Medical",
+    sector: "Commercial",
+    location: "Delhi NCR",
+    established: "2015",
+    websiteUrl: "https://www.roshanenterprises.co.in/clients/mahanandan-hospital",
+    youtubeVideoId: "fJ9rUzIMcZQ",
+    youtubeTitle: "Mahanandan Super Speciality Hospital Infrastructure Tour",
+    logoBg: "#FFFFFF",
+    logoImg: "/images/clients/mahanandan.png",
+    logoSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none"><rect width="200" height="60" fill="#06233D"/><text x="40" y="35" fill="#FFFFFF" font-weight="900" font-size="14">MAHANANDAN</text></svg>`,
+    overview: "Mahanandan Super Speciality Hospital is a modern patient-centric healthcare institution equipped with state-of-the-art neurosurgery, ICUs, and advanced surgical care units.",
+    roshanContractScope: {
+      title: "Sterile OT Flooring & Anti-Microbial Interior Painting",
+      areaDelivered: "45,000 Sq. Ft.",
+      services: [
+        "Sterile Cleanroom Anti-Bacterial Vinyl Flooring",
+        "Zero-VOC Anti-Microbial Wall Coating",
+        "ICU & Patient Ward Renovation",
+        "Waterproof Bathroom & Basement Sealing"
+      ],
+      description: "Turnkey sterile anti-microbial wall painting and hygienic floor coving executed under strict dust-free containment for operational hospital wings."
+    },
+    reviews: [
+      {
+        author: "Project Medical Director",
+        role: "Hospital Management",
+        rating: 5,
+        date: "January 2026",
+        comment: "Roshan Enterprises engineered immaculate sterile coatings and anti-bacterial flooring with zero noise or dust leakages into surrounding wards."
+      }
+    ],
+    specifications: [
+      { label: "Type", value: "Super Speciality Hospital" },
+      { label: "Contractor", value: "Roshan Enterprises" }
+    ]
+  },
+  {
+    slug: "ess-kay-group",
+    name: "ESS KAY Group",
+    legalName: "ESS KAY Group & Infrastructure Private Limited",
+    category: "Industrial & Infra",
+    sector: "Infra",
+    location: "Greater Noida & Delhi NCR",
+    established: "2005",
+    websiteUrl: "https://www.roshanenterprises.co.in/projects",
+    youtubeVideoId: "3JZ_D3ELwOQ",
+    youtubeTitle: "ESS KAY Group Structural Execution & Concrete Works",
+    logoBg: "#FFFFFF",
+    logoImg: "/images/clients/ess_kay.png",
+    logoSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none"><rect width="200" height="60" fill="#03182B"/><text x="50" y="35" fill="#FFFFFF" font-weight="900" font-size="16">ESS KAY</text></svg>`,
+    overview: "ESS KAY Group is a leading industrial infrastructure and commercial development conglomerate executing large-scale structural civil engineering across North India.",
+    roshanContractScope: {
+      title: "Heavy RCC Structural Framing & Industrial VDF Flooring",
+      areaDelivered: "75,000 Sq. Ft.",
+      services: [
+        "Heavy Duty RCC Column & Slab Shuttering",
+        "VDF Concrete Floor Levelling & Compaction",
+        "AAC Block Masonry Division Walls",
+        "External Grit & Weatherproof Plastering"
+      ],
+      description: "Structural RCC framing and VDF concrete floor compaction for high-load industrial logistics and manufacturing facilities."
+    },
+    reviews: [
+      {
+        author: "Managing Partner",
+        role: "Infrastructure Lead",
         rating: 5,
         date: "December 2025",
-        comment: "Roshan Enterprises is our trusted execution arm for heavy RCC shuttering and concrete pouring. Outstanding civil engineering team."
+        comment: "Roshan Enterprises is our go-to sub-contractor for heavy RCC shuttering and VDF flooring execution."
       }
     ],
     specifications: [
       { label: "Concrete Grade", value: "IS 456 M30 RCC" },
-      { label: "Masonry Type", value: "AAC Blocks & Mortar" },
-      { label: "Execution Standard", value: "NBC Compliant" },
       { label: "Contractor", value: "Roshan Enterprises" }
     ]
   },
   {
-    slug: "tirath-estate",
-    name: "Tirath Commercial Estate",
-    legalName: "Tirath Commercial Estate & Logistics Parks",
-    category: "Real Estate & Logistics",
-    sector: "Logistics",
-    location: "Greater Noida & Delhi NCR",
-    established: "2012",
-    websiteUrl: "https://www.roshanenterprises.co.in/projects",
-    youtubeVideoId: "fJ9rUzIMcZQ",
-    youtubeTitle: "Tirath Logistics Park VDF Floor & Warehouse Facility Walkthrough",
-    logoBg: "#06233D",
-    logoSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
-      <rect width="200" height="60" fill="#06233D"/>
-      <path d="M20 15 H50 V25 H35 V45 H20 V15 Z" fill="#D99A16"/>
-      <text x="60" y="32" fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="900" font-size="16" letter-spacing="1">TIRATH ESTATE</text>
-      <text x="60" y="46" fill="#F0B323" font-family="Arial, sans-serif" font-weight="700" font-size="10" letter-spacing="2">LOGISTICS PARK</text>
-    </svg>`,
-    overview: "Tirath Commercial Estate develops prime industrial warehousing parks, commercial retail hubs, and logistics estates across the Delhi NCR region.",
+    slug: "romsons-healthcare",
+    name: "Romsons Group",
+    legalName: "Romsons Scientific & Surgical Private Limited",
+    category: "Medical Devices & Healthcare",
+    sector: "Manufacturing",
+    location: "Noida & PAN India",
+    established: "1952",
+    websiteUrl: "https://www.romsons.com",
+    youtubeVideoId: "4y8w9gW6N2k",
+    youtubeTitle: "Romsons Corporate Manufacturing Facility Walkthrough",
+    logoBg: "#FFFFFF",
+    logoImg: "/images/clients/romsons.png",
+    logoSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none"><rect width="200" height="60" fill="#008080"/><text x="45" y="35" fill="#FFFFFF" font-weight="900" font-size="16">ROMSONS</text></svg>`,
+    overview: "Romsons Group is India's pioneer in medical devices and disposable surgical products with over 70 years of innovation exporting to 100+ countries.",
     roshanContractScope: {
-      title: "Logistics Park VDF Concrete Floor & Kota Stone Polishing",
-      areaDelivered: "65,000 Sq. Ft.",
+      title: "Cleanroom Anti-Static Epoxy & Hygienic PU Wall Coating",
+      areaDelivered: "80,000 Sq. Ft.",
       services: [
-        "VDF Concrete Logistics Flooring",
-        "Kota Stone Floor Mirror Polishing",
-        "Anti-Fungal Exterior Wall Sealing",
-        "Groove Cutting & Elastomeric PU Joint Fill"
+        "Self-Leveling Cleanroom Epoxy Flooring",
+        "Seamless Anti-Bacterial PU Wall Coating",
+        "Machine Foundation Concrete Pads",
+        "Low-VOC Environmental Wall Paint"
       ],
-      description: "Heavy-duty VDF flooring with high forklift load endurance and mirror polished Kota stone for estate office lobbies."
+      description: "Roshan Enterprises delivered dust-free cleanroom epoxy flooring and anti-bacterial PU wall coatings for medical device manufacturing plants."
     },
     reviews: [
       {
-        author: "Tirath Singh",
-        role: "Estate Development Head",
+        author: "VP Infrastructure & Operations",
+        role: "Corporate Quality",
         rating: 5,
-        date: "October 2025",
-        comment: "The VDF concrete floor and Kota stone polishing delivered for our logistics park exceeded all tenant expectations."
+        date: "January 2026",
+        comment: "Roshan Enterprises delivered immaculate cleanroom flooring meeting strict international sterile manufacturing guidelines."
       }
     ],
     specifications: [
-      { label: "Logistics Area", value: "95,000 sq.ft." },
-      { label: "Flooring System", value: "VDF Concrete & Kota Stone" },
-      { label: "Forklift Load", value: "TR-34 Heavy Load Class" },
+      { label: "Certification", value: "ISO 13485 Medical Cleanroom" },
+      { label: "Contractor", value: "Roshan Enterprises" }
+    ]
+  },
+  {
+    slug: "bimtech",
+    name: "BIMTECH (Birla Institute)",
+    legalName: "Birla Institute of Management Technology",
+    category: "Institutional & Campus",
+    sector: "Institutional",
+    location: "Knowledge Park II, Greater Noida",
+    established: "1988",
+    websiteUrl: "https://www.bimtech.ac.in",
+    youtubeVideoId: "3JZ_D3ELwOQ",
+    youtubeTitle: "BIMTECH Birla Institute Campus Infrastructure Walkthrough",
+    logoBg: "#FFFFFF",
+    logoImg: "/images/clients/bimtech.png",
+    logoSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none"><rect width="200" height="60" fill="#03182B"/><text x="40" y="35" fill="#FFFFFF" font-weight="900" font-size="16">BIMTECH</text></svg>`,
+    overview: "Birla Institute of Management Technology (BIMTECH) is a premier AICTE-approved B-school in Greater Noida, featuring world-class academic blocks, hostels, and green eco-campuses.",
+    roshanContractScope: {
+      title: "Campus Facade Painting, Kota Stone & Auditorium Acoustic Ceilings",
+      areaDelivered: "85,000 Sq. Ft.",
+      services: [
+        "Academic Block Weatherproof Facade Coating",
+        "Auditorium Acoustic False Ceiling Grid",
+        "Campus Hallway Kota Stone Mirror Polishing",
+        "Internal Classroom Smooth Gypsum Plaster"
+      ],
+      description: "Roshan Enterprises completed turnkey exterior weather-proof painting, auditorium acoustic false ceilings, and hallway Kota stone polishing for BIMTECH."
+    },
+    reviews: [
+      {
+        author: "Estate & Infrastructure Lead",
+        role: "Campus Maintenance",
+        rating: 5,
+        date: "December 2025",
+        comment: "Roshan Enterprises completed the campus block painting and acoustic ceiling works with superior finish during our academic break."
+      }
+    ],
+    specifications: [
+      { label: "Campus Area", value: "Knowledge Park II, Greater Noida" },
       { label: "Contractor", value: "Roshan Enterprises" }
     ]
   }

@@ -84,14 +84,22 @@ export default function ClientDetailPage({ params }: PageProps) {
                 </div>
               </div>
 
-              {/* Right Logo Display - SVG Banner */}
+              {/* Right Logo Display Banner */}
               <div className="lg:col-span-4 flex justify-center lg:justify-end">
-                <div className="p-6 bg-navy-primary border-2 border-gold-primary shadow-2xl rounded-none w-full max-w-sm flex flex-col items-center text-center space-y-4">
-                  <div
-                    className="w-full h-24 flex items-center justify-center p-2 rounded-none"
-                    dangerouslySetInnerHTML={{ __html: client.logoSvg }}
-                  />
-                  <div className="text-[11px] font-bold uppercase tracking-widest text-slate-400">
+                <div className="p-6 bg-white border-2 border-gold-primary shadow-2xl rounded-none w-full max-w-sm flex flex-col items-center text-center space-y-4">
+                  {client.logoImg ? (
+                    <img
+                      src={client.logoImg}
+                      alt={client.name}
+                      className="h-24 w-auto object-contain max-w-[220px]"
+                    />
+                  ) : (
+                    <div
+                      className="w-full h-24 flex items-center justify-center p-2 rounded-none"
+                      dangerouslySetInnerHTML={{ __html: client.logoSvg }}
+                    />
+                  )}
+                  <div className="text-[11px] font-bold uppercase tracking-widest text-slate-500">
                     Verified Corporate Partner
                   </div>
                 </div>

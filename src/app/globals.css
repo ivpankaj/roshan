@@ -2,29 +2,29 @@
 
 @layer base {
   :root {
-    --navy-primary: #06233D;
-    --navy-dark: #03182B;
-    --navy-light: #0D3559;
+    --navy-primary: #FFFFFF;
+    --navy-dark: #F8FAFC;
+    --navy-light: #F1F5F9;
     --gold-primary: #D99A16;
-    --gold-bright: #F0B323;
+    --gold-bright: #D99A16;
     --gold-light: #FFF9EB;
-    --bg-light: #F7F8FA;
-    --text-dark: #17202A;
-    --text-muted: #667085;
+    --bg-light: #FFFFFF;
+    --text-dark: #0F172A;
+    --text-muted: #475569;
     --border-light: #E2E8F0;
   }
 }
 
 @theme {
-  --color-navy-primary: #06233D;
-  --color-navy-dark: #03182B;
-  --color-navy-light: #0D3559;
+  --color-navy-primary: #FFFFFF;
+  --color-navy-dark: #F8FAFC;
+  --color-navy-light: #F1F5F9;
   --color-gold-primary: #D99A16;
-  --color-gold-bright: #F0B323;
+  --color-gold-bright: #D99A16;
   --color-gold-light: #FFF9EB;
-  --color-bg-light: #F7F8FA;
-  --color-text-dark: #17202A;
-  --color-text-muted: #667085;
+  --color-bg-light: #FFFFFF;
+  --color-text-dark: #0F172A;
+  --color-text-muted: #475569;
   --color-border-light: #E2E8F0;
   --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }

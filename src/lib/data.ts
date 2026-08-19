@@ -53,12 +53,14 @@ export const COMPANY_INFO = {
   address: "Corporate Office, Uttar Pradesh, India",
   serviceArea: "Serving PAN India Clients",
   trustMetrics: [
+    { label: "100+ Houses Decorated", desc: "Over 100+ residential homes & villas decorated with premium finishes" },
     { label: "Quality Assured", desc: "Premium grade materials & stringent QA checks" },
     { label: "Experienced Team", desc: "Skilled technicians, engineers & site managers" },
     { label: "On-Time Delivery", desc: "Rigorous project scheduling & milestone tracking" },
     { label: "Honest & Transparent", desc: "No hidden charges & upfront detailed estimations" },
   ],
   footerHighlights: [
+    "100+ Houses Decorated",
     "Quality Materials",
     "Skilled Professionals",
     "Timely Completion",
@@ -67,12 +69,17 @@ export const COMPANY_INFO = {
 };
 
 export const CLIENT_REFERENCES = [
-  { name: "Sperry Group", category: "Industrial & Infra", location: "Greater Noida" },
-  { name: "Techno Solution Plast Limited", category: "Manufacturing & Plastics", location: "Delhi NCR" },
-  { name: "E-Packs Durable Ltd.", category: "Electronics & Appliances", location: "Neemrana / Noida" },
-  { name: "East India Industries", category: "Commercial", location: "Uttar Pradesh" },
-  { name: "Mahesh Infra Project", category: "Civil Sub-contracting", location: "PAN India" },
-  { name: "Tirath Commercial Estate", category: "Real Estate & Logistics", location: "Greater Noida" },
+  { name: "Sperry Group", category: "Industrial & Polymers", location: "Greater Noida" },
+  { name: "LG Electronics India", category: "Electronics & Manufacturing", location: "Greater Noida / Pune" },
+  { name: "Haldiram's Group", category: "Food Processing & Commercial", location: "PAN India" },
+  { name: "INOX Air Products", category: "Industrial Gases & Infra", location: "PAN India" },
+  { name: "E-Pack Polymer Technologies", category: "Polymers & Packaging", location: "Greater Noida" },
+  { name: "BIMTECH (Birla Institute)", category: "Institutional & Campus", location: "Greater Noida" },
+  { name: "Tirath Ram Shah Hospital (TRSCH)", category: "Healthcare & Medical", location: "Civil Lines, Delhi" },
+  { name: "Mahanandan Super Speciality Hospital", category: "Healthcare & Medical", location: "Delhi NCR" },
+  { name: "Romsons Group", category: "Medical Devices & Cleanrooms", location: "Noida / PAN India" },
+  { name: "East India Group", category: "Commercial & Infra", location: "Uttar Pradesh" },
+  { name: "ESS KAY Group", category: "Civil Sub-contracting", location: "PAN India" },
 ];
 
 export const SERVICES_DATA: ServiceItem[] = [
@@ -299,14 +306,58 @@ export const PROJECTS_DATA: ProjectItem[] = [
   },
   {
     id: "proj-6",
-    title: "Luxury Residential Tower Finishes & Kota Stone Flooring",
+    title: "100+ Residential Houses & Villas Decoration & Painting",
+    category: "painting",
+    sector: "Residential",
+    location: "Greater Noida & Delhi NCR",
+    image: "/images/hero_painting.jpg",
+    description: "Successfully decorated and painted over 100+ high-rise apartments, villas, and independent houses with velvet emulsion, wall textures, and waterproof exterior coatings.",
+    scope: ["100+ Houses Decorated", "Interior Velvet Emulsion", "Designer Wall Textures", "Exterior Waterproofing"],
+    completionYear: "2025"
+  },
+  {
+    id: "proj-7",
+    title: "Plain Cement Concrete (PCC) Basement Flooring",
+    category: "flooring",
+    sector: "Industrial",
+    location: "Ecotech 6, Greater Noida",
+    image: "/images/flooring_industrial.jpg",
+    description: "Turnkey execution of 50,000 sq.ft. PCC basement levelling, concrete compaction, surface trowel finishing, and laser slope levelling.",
+    scope: ["PCC Floor Levelling", "Drainage Slope Compaction", "Laser Level Check"],
+    completionYear: "2025"
+  },
+  {
+    id: "proj-8",
+    title: "Heavy RCC Structural Framing & Column Casting",
+    category: "civil-works",
+    sector: "Industrial",
+    location: "Udyog Vihar, Greater Noida",
+    image: "/images/civil_construction.jpg",
+    description: "Structural RCC civil construction including heavy beam casting, column shuttering, rebar binding, and M30 compressive strength slab pouring.",
+    scope: ["RCC Shuttering & Rebar", "M30 Concrete Pouring", "Structural Beam Casting"],
+    completionYear: "2025"
+  },
+  {
+    id: "proj-9",
+    title: "Vitrified Floor Tiles & Bathroom Wall Tiling",
     category: "civil-works",
     sector: "Residential",
-    location: "Sector 1, Greater Noida West",
+    location: "Greater Noida West",
     image: "/images/painting_interior.jpg",
-    description: "High-end residential finishing including polished Kota stone common areas, vitrified balcony tiles, and interior satin emulsion paints.",
-    scope: ["Kota Stone Mirror Polishing", "Vitrified Tile Installation", "Satin Emulsion Finish"],
-    completionYear: "2023"
+    description: "Precision installation of 800x1600mm vitrified floor tiles, anti-skid balcony tiles, and ceramic bathroom wall tiling with epoxy grouting.",
+    scope: ["Vitrified Floor Tiling", "Bathroom Wall Ceramic Tiles", "Spacer Epoxy Grouting"],
+    completionYear: "2025"
+  },
+  {
+    id: "proj-10",
+    title: "Mirror Polished Granite Lobby & Countertop Work",
+    category: "civil-works",
+    sector: "Commercial",
+    location: "Noida Expressway, Sector 142",
+    image: "/images/painting_interior.jpg",
+    description: "Premium Rajasthan Granite floor laying, elevator lobby wall cladding, chamfered edge moulding, and mirror polishing for corporate hubs.",
+    scope: ["Granite Floor Laying", "Lobby Wall Cladding", "Edge Moulding & Mirror Polish"],
+    completionYear: "2025"
   }
 ];
 
@@ -341,7 +392,7 @@ export const INDUSTRIES_DATA: IndustryItem[] = [
     shortDesc: "Group housing societies, high-rise apartment towers, private villas, and residential developments.",
     fullDesc: "Flawless wall putty and velvet emulsion painting, decorative polish, durable basement PCC flooring, and precise masonry waterproofing for modern living spaces.",
     image: "/images/hero_painting.jpg",
-    keyServicesProvided: ["Interior Velvet Painting", "Waterproof Wall Coatings", "Basement Parking PCC", "Tile & Stone Laying"],
+    keyServicesProvided: ["All types of painting and maintenance services", "Waterproof Wall Coatings", "Basement Parking PCC", "Tile & Stone Laying"],
     featuredProjectsCount: 30
   },
   {
@@ -352,18 +403,18 @@ export const INDUSTRIES_DATA: IndustryItem[] = [
     shortDesc: "Universities, engineering colleges, schools, government buildings, and research institutes.",
     fullDesc: "Reliable, large-scale painting, durable hallway floor tiles, sturdy RCC civil additions, and routine structural rehabilitation delivered during academic breaks.",
     image: "/images/civil_construction.jpg",
-    keyServicesProvided: ["Campus Interior & Exterior Paint", "Kota Stone & Terrazzo Flooring", "Civil Structure Maintenance", "Auditorium Acoustic Ceilings"],
+    keyServicesProvided: ["For all maintenance and painting", "Kota Stone & Terrazzo Flooring", "Civil Structure Maintenance", "Auditorium Acoustic Ceilings"],
     featuredProjectsCount: 15
   },
   {
     id: "healthcare",
-    title: "Healthcare",
+    title: "Hospitals",
     slug: "healthcare",
     iconName: "Hospital",
-    shortDesc: "Hospitals, medical diagnostic centers, pharmaceutical labs, and cleanroom facilities.",
-    fullDesc: "Specialized anti-bacterial PU flooring, low-VOC zero-odor paints, wall-to-floor hygienic coving, and moisture-sealed false ceiling systems compliant with medical standards.",
+    shortDesc: "Providing turnkey services to hospitals with execution perfected for active, sensitive hospital environments.",
+    fullDesc: "We provide specialized anti-bacterial PU flooring, zero-VOC odorless paints, and sterile civil maintenance engineered specifically to operate cleanly and silently in active hospital environments without disrupting patient care.",
     image: "/images/flooring_industrial.jpg",
-    keyServicesProvided: ["Hygienic Cleanroom PU Flooring", "Anti-Bacterial Wall Coatings", "Zero-VOC Odorless Paints", "Seamless Wall Coving"],
+    keyServicesProvided: ["Hospital Environment Execution", "Anti-Bacterial Wall Coatings", "Zero-VOC Odorless Paints", "Seamless Wall Coving"],
     featuredProjectsCount: 12
   }
 ];
@@ -428,7 +479,7 @@ export const TESTIMONIALS = [
   {
     quote: "Roshan Enterprises completed over 40,000 sq.ft. of heavy VDF flooring for our industrial plant in Greater Noida ahead of schedule. Their laser leveling precision and groove cutting work were exceptional.",
     author: "Plant Head & Operations Manager",
-    company: "Techno Solution Plast Limited",
+    company: "Sperry Techno Solutions",
     rating: 5
   },
   {
@@ -440,7 +491,7 @@ export const TESTIMONIALS = [
   {
     quote: "Finding a single contractor who can seamlessly handle high-durability epoxy flooring, RCC foundations, and elastomeric building painting is rare. Roshan Enterprises is our trusted partner.",
     author: "Facility Engineering Director",
-    company: "E-Packs Durable Ltd.",
+    company: "E-Pack Polymer Technologies Pvt. Ltd.",
     rating: 5
   }
 ];
