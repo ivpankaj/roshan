@@ -2,11 +2,11 @@
 
 @layer base {
   :root {
-    --navy-primary: #FFFFFF;
-    --navy-dark: #F8FAFC;
-    --navy-light: #F1F5F9;
+    --navy-primary: #06233D;
+    --navy-dark: #03182B;
+    --navy-light: #0D3559;
     --gold-primary: #D99A16;
-    --gold-bright: #D99A16;
+    --gold-bright: #F0B323;
     --gold-light: #FFF9EB;
     --bg-light: #FFFFFF;
     --text-dark: #0F172A;
@@ -16,11 +16,11 @@
 }
 
 @theme {
-  --color-navy-primary: #FFFFFF;
-  --color-navy-dark: #F8FAFC;
-  --color-navy-light: #F1F5F9;
+  --color-navy-primary: #06233D;
+  --color-navy-dark: #03182B;
+  --color-navy-light: #0D3559;
   --color-gold-primary: #D99A16;
-  --color-gold-bright: #D99A16;
+  --color-gold-bright: #F0B323;
   --color-gold-light: #FFF9EB;
   --color-bg-light: #FFFFFF;
   --color-text-dark: #0F172A;

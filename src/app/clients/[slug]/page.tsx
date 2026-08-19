@@ -123,9 +123,6 @@ export default function ClientDetailPage({ params }: PageProps) {
                     <span className="px-3 py-1 bg-gold-primary text-navy-dark text-xs font-black uppercase tracking-wider rounded-none">
                       Contract Scope Delivered
                     </span>
-                    <span className="text-sm font-extrabold text-navy-primary">
-                      Area: {client.roshanContractScope.areaDelivered}
-                    </span>
                   </div>
 
                   <h2 className="text-2xl sm:text-3xl font-black text-navy-primary">

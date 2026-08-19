@@ -53,7 +53,7 @@ export const ClientShowcase: React.FC = () => {
                   {client.name}
                 </h4>
                 <p className="text-slate-600 text-xs line-clamp-2 leading-relaxed">
-                  {client.roshanContractScope.title} ({client.roshanContractScope.areaDelivered})
+                  {client.roshanContractScope.title}
                 </p>
 
                 <div className="pt-2 flex items-center justify-between text-xs font-black text-navy-primary group-hover:text-gold-primary uppercase tracking-wider">

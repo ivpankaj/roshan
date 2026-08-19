@@ -71,7 +71,6 @@ export const COMPANY_INFO = {
 export const CLIENT_REFERENCES = [
   { name: "Sperry Group", category: "Industrial & Polymers", location: "Greater Noida" },
   { name: "LG Electronics India", category: "Electronics & Manufacturing", location: "Greater Noida / Pune" },
-  { name: "Haldiram's Group", category: "Food Processing & Commercial", location: "PAN India" },
   { name: "INOX Air Products", category: "Industrial Gases & Infra", location: "PAN India" },
   { name: "E-Pack Polymer Technologies", category: "Polymers & Packaging", location: "Greater Noida" },
   { name: "BIMTECH (Birla Institute)", category: "Institutional & Campus", location: "Greater Noida" },

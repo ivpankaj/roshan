@@ -195,46 +195,7 @@ export const CLIENTS_LIST: ClientCompanyDetail[] = [
       { label: "Contractor", value: "Roshan Enterprises" }
     ]
   },
-  {
-    slug: "haldirams",
-    name: "Haldiram's Group",
-    legalName: "Haldiram Snacks Private Limited",
-    category: "Food Processing & Commercial",
-    sector: "Commercial",
-    location: "Noida & PAN India Outlets",
-    established: "1937",
-    websiteUrl: "https://www.haldiram.com",
-    youtubeVideoId: "L_LUpnjgPso",
-    youtubeTitle: "Haldiram Corporate Facility & Commercial Complex Tour",
-    logoBg: "#FFFFFF",
-    logoImg: "/images/clients/haldirams.png",
-    logoSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none"><rect width="200" height="60" fill="#FF0000"/><text x="50" y="38" fill="#FFFFFF" font-weight="900" font-size="18">HALDIRAMS</text></svg>`,
-    overview: "Haldiram's is India's most iconic sweet, snack, and food manufacturing giant with extensive commercial retail hubs and food processing units across India and international markets.",
-    roshanContractScope: {
-      title: "Food-Grade Hygienic Epoxy Flooring & Commercial Facade Painting",
-      areaDelivered: "60,000 Sq. Ft.",
-      services: [
-        "Food-Grade Polyurethane & Epoxy Floor Coating",
-        "Hygienic Washable Interior Wall Coating",
-        "Commercial Retail Outlet Facade Painting",
-        "Vitrified Floor Tiling & Acoustic Ceilings"
-      ],
-      description: "Roshan Enterprises executed food-grade seamless hygienic epoxy flooring for processing lines along with elastomeric weather-proof facade painting for commercial hubs."
-    },
-    reviews: [
-      {
-        author: "General Manager (Projects)",
-        role: "Corporate Infrastructure",
-        rating: 5,
-        date: "February 2026",
-        comment: "Roshan Enterprises delivered top-tier food-grade flooring and facade painting with exemplary quality control."
-      }
-    ],
-    specifications: [
-      { label: "Standard", value: "Food-Grade Hygiene Certified" },
-      { label: "Contractor", value: "Roshan Enterprises" }
-    ]
-  },
+
   {
     slug: "east-india-industries",
     name: "East India Group",
