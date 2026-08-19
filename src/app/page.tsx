@@ -225,7 +225,7 @@ export default function HomePage() {
       <Footer onOpenQuoteModal={() => handleOpenQuote('General Inquiry')} />
 
       {/* Automatic Welcome Promotional Popup Modal */}
-      <WelcomeModal onOpenQuoteModal={() => handleOpenQuote('General Inquiry')} />
+      <WelcomeModal />
 
       {/* Quick Quote Modal */}
       <QuickQuoteModal
