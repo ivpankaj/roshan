@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
             </p>
             <h3 className="text-lg font-bold text-navy-primary pt-2">1. Information We Collect</h3>
             <p>
-              When you fill out our quote request forms or contact us directly via telephone (+91 62005 80561) or email, we collect relevant contact information including your full name, mobile number, email address, company name, project site location, and technical scope parameters.
+              When you fill out our quote request forms or contact us directly via telephone (+91 70489 76431) or email, we collect relevant contact information including your full name, mobile number, email address, company name, project site location, and technical scope parameters.
             </p>
             <h3 className="text-lg font-bold text-navy-primary pt-2">2. How We Use Information</h3>
             <p>

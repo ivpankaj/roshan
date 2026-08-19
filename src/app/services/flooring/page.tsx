@@ -94,8 +94,8 @@ export default function FlooringServicePage() {
                   >
                     Get Flooring Quote
                   </button>
-                  <a href="tel:+916200580561" className="block text-center text-xs font-bold text-slate-300 hover:text-white">
-                    📞 Direct Call: +91 62005 80561
+                  <a href="tel:+917048976431" className="block text-center text-xs font-bold text-slate-300 hover:text-white">
+                    📞 Direct Call: +91 70489 76431
                   </a>
                 </div>
 

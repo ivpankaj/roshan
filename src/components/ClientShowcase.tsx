@@ -52,9 +52,6 @@ export const ClientShowcase: React.FC = () => {
                 <h4 className="font-extrabold text-navy-primary text-base group-hover:text-gold-primary transition-colors">
                   {client.name}
                 </h4>
-                <p className="text-slate-600 text-xs line-clamp-2 leading-relaxed">
-                  {client.roshanContractScope.title}
-                </p>
 
                 <div className="pt-2 flex items-center justify-between text-xs font-black text-navy-primary group-hover:text-gold-primary uppercase tracking-wider">
                   <span>Explore Case Study & Video</span>

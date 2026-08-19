@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     canonical: 'https://www.roshanenterprises.co.in',
   },
   icons: {
-    icon: '/icon.svg',
+    icon: '/logo.png',
     shortcut: '/favicon.ico',
-    apple: '/icon.svg',
+    apple: '/logo.png',
   },
   openGraph: {
     title: "Roshan Enterprises | Painting, Flooring & Civil Works",
@@ -65,7 +65,7 @@ const jsonLdSchema = {
   "@type": "HomeAndConstructionBusiness",
   "name": "Roshan Enterprises",
   "image": "https://www.roshanenterprises.co.in/images/hero_painting.jpg",
-  "telephone": "+916200580561",
+  "telephone": "+917048976431",
   "email": "info@roshanenterprises.co.in",
   "address": {
     "@type": "PostalAddress",
@@ -102,7 +102,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} scroll-smooth`}>
       <head>
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/logo.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}
