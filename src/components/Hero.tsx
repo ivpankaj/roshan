@@ -11,7 +11,7 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal }) => {
   return (
-    <section className="relative min-h-[90vh] pt-32 pb-20 flex items-center bg-navy-dark text-white overflow-hidden">
+    <section className="relative min-h-[90vh] pt-36 sm:pt-40 lg:pt-44 pb-20 flex items-center bg-navy-dark text-white overflow-hidden">
       {/* Background Navy Gradient & Architectural Grid Pattern */}
       <div className="absolute inset-0 navy-hero-bg opacity-95"></div>
       <div className="absolute inset-0 pattern-grid-subtle opacity-40"></div>
