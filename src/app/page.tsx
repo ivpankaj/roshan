@@ -11,6 +11,7 @@ import { WhyChooseUs } from '@/components/WhyChooseUs';
 import { ProcessTimeline } from '@/components/ProcessTimeline';
 import { CTASection } from '@/components/CTASection';
 import { QuickQuoteModal } from '@/components/QuickQuoteModal';
+import { WelcomeModal } from '@/components/WelcomeModal';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { SERVICES_DATA, TESTIMONIALS } from '@/lib/data';
@@ -222,6 +223,9 @@ export default function HomePage() {
 
       {/* Footer */}
       <Footer onOpenQuoteModal={() => handleOpenQuote('General Inquiry')} />
+
+      {/* Automatic Welcome Promotional Popup Modal */}
+      <WelcomeModal onOpenQuoteModal={() => handleOpenQuote('General Inquiry')} />
 
       {/* Quick Quote Modal */}
       <QuickQuoteModal
