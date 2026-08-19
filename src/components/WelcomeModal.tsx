@@ -32,7 +32,7 @@ export const WelcomeModal: React.FC = () => {
       <div className="absolute inset-0" onClick={handleClose}></div>
 
       {/* Pure Image Container with Floating Close Button */}
-      <div className="relative max-w-md sm:max-w-lg w-full z-10 animate-in zoom-in-95 duration-300">
+      <div className="relative max-h-[85vh] max-w-[90vw] sm:max-w-md z-10 animate-in zoom-in-95 duration-300 flex items-center justify-center">
         
         {/* Sleek Floating Cancel / Close Button */}
         <button
@@ -44,12 +44,12 @@ export const WelcomeModal: React.FC = () => {
           <X className="w-6 h-6 stroke-[3]" />
         </button>
 
-        {/* Clean Poster Image Only */}
-        <div className="rounded-lg overflow-hidden shadow-2xl border border-white/20 bg-slate-900">
+        {/* Clean Poster Image Only - Fits Image Tightly */}
+        <div className="rounded-lg overflow-hidden shadow-2xl border border-white/20">
           <img
             src="/images/popup_banner.jpg"
             alt="Roshan Enterprises Poster"
-            className="w-full h-auto max-h-[85vh] object-contain block"
+            className="max-h-[80vh] w-auto max-w-full object-contain block"
           />
         </div>
 
