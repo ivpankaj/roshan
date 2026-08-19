@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { ArrowRight, CheckCircle2, ShieldCheck, MapPin, Award, Building, Sparkles } from 'lucide-react';
+import { ArrowRight, CheckCircle2, ShieldCheck, MapPin, Award, Building } from 'lucide-react';
 import { COMPANY_INFO } from '@/lib/data';
 
 interface HeroProps {
@@ -16,9 +16,69 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal }) => {
       <div className="absolute inset-0 navy-hero-bg opacity-95"></div>
       <div className="absolute inset-0 pattern-grid-subtle opacity-40"></div>
 
-      {/* Decorative Gold Geometric Sharp Blur Elements */}
-      <div className="absolute -top-24 -right-24 w-96 h-96 bg-gold-primary/15 blur-3xl pointer-events-none"></div>
-      <div className="absolute bottom-10 left-10 w-80 h-80 bg-navy-light/40 blur-2xl pointer-events-none"></div>
+      {/* Golden Wavy Curved Lines Background */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        <svg
+          className="absolute inset-0 w-full h-full object-cover opacity-75"
+          preserveAspectRatio="none"
+          viewBox="0 0 1440 600"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="hero-gold-wave-1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#D99A16" stopOpacity="0.85" />
+              <stop offset="50%" stopColor="#F0B323" stopOpacity="1" />
+              <stop offset="100%" stopColor="#D99A16" stopOpacity="0.85" />
+            </linearGradient>
+            <linearGradient id="hero-gold-wave-2" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#F0B323" stopOpacity="0.35" />
+              <stop offset="50%" stopColor="#D99A16" stopOpacity="0.65" />
+              <stop offset="100%" stopColor="#F0B323" stopOpacity="0.35" />
+            </linearGradient>
+            <linearGradient id="hero-gold-wave-fill" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#D99A16" stopOpacity="0.22" />
+              <stop offset="100%" stopColor="#F0B323" stopOpacity="0.04" />
+            </linearGradient>
+          </defs>
+
+          {/* Golden Wave Filled Area */}
+          <path
+            d="M0,180 C360,340 720,60 1080,300 C1280,420 1440,200 1440,200 L1440,600 L0,600 Z"
+            fill="url(#hero-gold-wave-fill)"
+          />
+
+          {/* Primary Golden Wave Curve */}
+          <path
+            d="M0,180 C360,340 720,60 1080,300 C1280,420 1440,200 1440,200"
+            stroke="url(#hero-gold-wave-1)"
+            strokeWidth="4"
+            fill="none"
+          />
+
+          {/* Secondary Intersecting Wave Curve */}
+          <path
+            d="M0,380 C400,120 800,480 1200,160 C1320,50 1440,260 1440,260"
+            stroke="url(#hero-gold-wave-2)"
+            strokeWidth="3"
+            strokeDasharray="12 6"
+            fill="none"
+          />
+
+          {/* Top Subtle Wave Line */}
+          <path
+            d="M0,100 C480,240 960,40 1440,160"
+            stroke="#F0B323"
+            strokeWidth="1.5"
+            strokeOpacity="0.4"
+            fill="none"
+          />
+        </svg>
+
+        {/* Ambient Golden Glow Orbs */}
+        <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-gold-primary/20 blur-3xl rounded-full"></div>
+        <div className="absolute bottom-10 right-10 w-96 h-96 bg-gold-bright/15 blur-3xl rounded-full"></div>
+      </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
