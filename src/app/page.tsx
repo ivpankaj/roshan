@@ -14,6 +14,7 @@ import { QuickQuoteModal } from '@/components/QuickQuoteModal';
 import { WelcomeModal } from '@/components/WelcomeModal';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
+import { WavyBackground } from '@/components/WavyBackground';
 import { SERVICES_DATA, TESTIMONIALS } from '@/lib/data';
 import { ArrowRight, CheckCircle2, Star, Building2, ShieldCheck } from 'lucide-react';
 
@@ -45,8 +46,9 @@ export default function HomePage() {
         <ClientShowcase />
 
         {/* 4. About Us Preview Section */}
-        <section className="py-20 bg-white border-b border-slate-200">
-          <div className="max-w-7xl mx-auto px-4 sm:px-8">
+        <section className="py-20 bg-slate-50 border-b border-slate-200 relative overflow-hidden">
+          <WavyBackground variant="gold-subtle" />
+          <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               
               {/* Left Image Visual - Sharp Rectangle */}
@@ -142,8 +144,9 @@ export default function HomePage() {
         </section>
 
         {/* 5. Services Section */}
-        <section className="py-20 bg-slate-100">
-          <div className="max-w-7xl mx-auto px-4 sm:px-8">
+        <section className="py-20 bg-slate-100 relative overflow-hidden">
+          <WavyBackground variant="gold-subtle" />
+          <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <span className="text-gold-primary text-xs font-extrabold uppercase tracking-widest bg-white px-4 py-1.5 border border-gold-primary/40 shadow-sm rounded-none">
                 Specialized Contracting
@@ -178,8 +181,9 @@ export default function HomePage() {
         <ProcessTimeline />
 
         {/* 9. Testimonials */}
-        <section className="py-20 bg-white border-t border-slate-200">
-          <div className="max-w-7xl mx-auto px-4 sm:px-8">
+        <section className="py-20 bg-slate-50 border-t border-slate-200 relative overflow-hidden">
+          <WavyBackground variant="gold-subtle" />
+          <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
             <div className="text-center max-w-3xl mx-auto mb-14">
               <span className="text-gold-primary text-xs font-bold uppercase tracking-widest bg-gold-light px-3 py-1 border border-gold-primary/30 rounded-none">
                 Client Feedback

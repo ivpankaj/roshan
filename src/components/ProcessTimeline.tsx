@@ -1,10 +1,14 @@
 import React from 'react';
 import { PROCESS_STEPS } from '@/lib/data';
+import { WavyBackground } from './WavyBackground';
 
 export const ProcessTimeline: React.FC = () => {
   return (
-    <section className="py-20 bg-slate-50 border-y border-slate-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-8">
+    <section className="py-20 bg-slate-50 border-y border-slate-200 relative overflow-hidden">
+      {/* Golden Wavy Background */}
+      <WavyBackground variant="gold-subtle" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
         
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-gold-primary text-xs font-bold uppercase tracking-widest bg-gold-light px-3 py-1 rounded-none border border-gold-primary/30">
