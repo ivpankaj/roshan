@@ -3,10 +3,15 @@ import Link from 'next/link';
 import { CLIENTS_LIST } from '@/lib/clientData';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
 
+import { WavyBackground } from './WavyBackground';
+
 export const ClientShowcase: React.FC = () => {
   return (
-    <section className="py-16 bg-white border-b border-slate-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-8">
+    <section className="py-16 bg-slate-50/70 border-b border-slate-200 relative overflow-hidden">
+      {/* Golden Wavy Background behind cards */}
+      <WavyBackground variant="gold-subtle" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
         
         {/* Header */}
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 mb-10">

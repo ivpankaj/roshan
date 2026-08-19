@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
+import { WavyBackground } from '@/components/WavyBackground';
 import { COMPANY_INFO } from '@/lib/data';
 import { Phone, MapPin, Mail, Send, CheckCircle2, Clock } from 'lucide-react';
 
@@ -37,6 +38,7 @@ export default function ContactPage() {
       <main className="flex-1 pt-28">
         {/* Page Hero */}
         <section className="bg-navy-dark text-white py-16 border-b border-gold-primary/30 relative overflow-hidden">
+          <WavyBackground variant="dark" />
           <div className="absolute inset-0 pattern-grid-subtle opacity-30 pointer-events-none"></div>
           <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
             <span className="text-gold-bright text-xs font-bold uppercase tracking-widest bg-navy-primary px-3.5 py-1 border border-gold-primary/30 rounded-none">
@@ -52,8 +54,9 @@ export default function ContactPage() {
         </section>
 
         {/* Contact Content Grid */}
-        <section className="py-20 bg-white border-b border-slate-200">
-          <div className="max-w-7xl mx-auto px-4 sm:px-8">
+        <section className="py-20 bg-slate-50 border-b border-slate-200 relative overflow-hidden">
+          <WavyBackground variant="gold-subtle" />
+          <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
               
               {/* Left Contact Information */}

@@ -5,6 +5,7 @@ import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { CTASection } from '@/components/CTASection';
 import { QuickQuoteModal } from '@/components/QuickQuoteModal';
+import { WavyBackground } from '@/components/WavyBackground';
 import { PROJECTS_DATA, ProjectItem } from '@/lib/data';
 import { MapPin, Calendar, Maximize2, X } from 'lucide-react';
 
@@ -35,6 +36,7 @@ export default function ProjectsPage() {
       <main className="flex-1 pt-28">
         {/* Hero */}
         <section className="bg-navy-dark text-white py-16 border-b border-gold-primary/30 relative overflow-hidden">
+          <WavyBackground variant="dark" />
           <div className="absolute inset-0 pattern-grid-subtle opacity-30 pointer-events-none"></div>
           <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
             <span className="text-gold-bright text-xs font-bold uppercase tracking-widest bg-navy-primary px-3.5 py-1 border border-gold-primary/30 rounded-none">
@@ -50,8 +52,9 @@ export default function ProjectsPage() {
         </section>
 
         {/* Portfolio Section */}
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-8">
+        <section className="py-20 bg-slate-50 relative overflow-hidden">
+          <WavyBackground variant="gold-subtle" />
+          <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
             
             {/* Filter Tabs - Sharp */}
             <div className="flex flex-wrap items-center justify-center gap-2 mb-12">

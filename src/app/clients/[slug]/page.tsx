@@ -7,6 +7,7 @@ import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { CTASection } from '@/components/CTASection';
 import { QuickQuoteModal } from '@/components/QuickQuoteModal';
+import { WavyBackground } from '@/components/WavyBackground';
 import { CLIENTS_LIST } from '@/lib/clientData';
 import { Building2, CheckCircle2, Star, Globe, MapPin, Calendar, ArrowLeft, ShieldCheck, ArrowRight, Video } from 'lucide-react';
 
@@ -31,6 +32,7 @@ export default function ClientDetailPage({ params }: PageProps) {
       <main className="flex-1 pt-28">
         {/* Client Page Header */}
         <section className="bg-navy-dark text-white py-16 border-b border-gold-primary/30 relative overflow-hidden">
+          <WavyBackground variant="dark" />
           <div className="absolute inset-0 pattern-grid-subtle opacity-30 pointer-events-none"></div>
           <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
             
@@ -111,8 +113,9 @@ export default function ClientDetailPage({ params }: PageProps) {
         </section>
 
         {/* Contract Executed & Specifications */}
-        <section className="py-16 bg-white border-b border-slate-200">
-          <div className="max-w-7xl mx-auto px-4 sm:px-8">
+        <section className="py-16 bg-slate-50 border-b border-slate-200 relative overflow-hidden">
+          <WavyBackground variant="gold-subtle" />
+          <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
               
               {/* Left Column: Scope Executed by Roshan Enterprises */}

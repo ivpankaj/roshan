@@ -5,6 +5,7 @@ import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { CTASection } from '@/components/CTASection';
 import { QuickQuoteModal } from '@/components/QuickQuoteModal';
+import { WavyBackground } from '@/components/WavyBackground';
 import { WHY_CHOOSE_US } from '@/lib/data';
 import { ShieldCheck, Award } from 'lucide-react';
 
@@ -18,6 +19,7 @@ export default function AboutPage() {
       <main className="flex-1 pt-28">
         {/* Page Hero */}
         <section className="bg-navy-dark text-white py-16 border-b border-gold-primary/30 relative overflow-hidden">
+          <WavyBackground variant="dark" />
           <div className="absolute inset-0 pattern-grid-subtle opacity-30 pointer-events-none"></div>
           <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
             <span className="text-gold-bright text-xs font-bold uppercase tracking-widest bg-navy-primary px-3.5 py-1 border border-gold-primary/30 rounded-none">
@@ -33,8 +35,9 @@ export default function AboutPage() {
         </section>
 
         {/* Company Overview & Mission */}
-        <section className="py-20 bg-white border-b border-slate-200">
-          <div className="max-w-7xl mx-auto px-4 sm:px-8">
+        <section className="py-20 bg-white border-b border-slate-200 relative overflow-hidden">
+          <WavyBackground variant="gold-subtle" />
+          <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               
               <div className="lg:col-span-6 space-y-6">
@@ -84,8 +87,9 @@ export default function AboutPage() {
         </section>
 
         {/* Strategic Pillars */}
-        <section className="py-20 bg-navy-primary text-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-8">
+        <section className="py-20 bg-navy-primary text-white relative overflow-hidden">
+          <WavyBackground variant="dark" />
+          <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-3xl sm:text-4xl font-black text-white">
                 What Sets Roshan Enterprises Apart

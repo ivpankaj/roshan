@@ -5,6 +5,7 @@ import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { CTASection } from '@/components/CTASection';
 import { QuickQuoteModal } from '@/components/QuickQuoteModal';
+import { WavyBackground } from '@/components/WavyBackground';
 import { INDUSTRIES_DATA } from '@/lib/data';
 import { Factory, Building, Home, GraduationCap, Hospital, CheckCircle2, ArrowRight } from 'lucide-react';
 
@@ -34,6 +35,7 @@ export default function IndustriesPage() {
       <main className="flex-1 pt-28">
         {/* Hero */}
         <section className="bg-navy-dark text-white py-16 border-b border-gold-primary/30 relative overflow-hidden">
+          <WavyBackground variant="dark" />
           <div className="absolute inset-0 pattern-grid-subtle opacity-30 pointer-events-none"></div>
           <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
             <span className="text-gold-bright text-xs font-bold uppercase tracking-widest bg-navy-primary px-3.5 py-1 border border-gold-primary/30 rounded-none">
@@ -49,8 +51,9 @@ export default function IndustriesPage() {
         </section>
 
         {/* Sectors Detail List */}
-        <section className="py-20 bg-white border-b border-slate-200">
-          <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-16">
+        <section className="py-20 bg-slate-50 border-b border-slate-200 relative overflow-hidden">
+          <WavyBackground variant="gold-subtle" />
+          <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-16 relative z-10">
             {INDUSTRIES_DATA.map((ind, idx) => {
               const Icon = getIcon(ind.iconName);
               const isEven = idx % 2 === 0;
